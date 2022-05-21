@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <h3>HTML Form! &#129409</h3>
+    <form action="demo.html" method="post">
+        <fieldset>
+            <div class="container">
+                <legend>User information</legend>
+                <div></div>
+                <!-- Input type text for username -->
+                <label for="uname">User Name</label>
+                <input type="text" id="uname" name="uname" placeholder="Enter user name"/>
+
+                <!-- Input type password for password -->
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd" placeholder="Enter password"/>
+
+                <!-- Input type number for age -->
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter age" min="0" max="125"/>
+
+                <!-- Input type email for email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" />
+
+                <!-- Input type textbox for address -->
+                <label for="address">Address:</label>
+                <textarea></textarea>
+
+                <!-- Input type date for date of birth -->
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" placeholder="Enter date of birth" />
+
+                <!-- Input type file for date of birth -->
+                <label for="file">Choose File</label>
+                <input type="file" id="file" name="file" placeholder="Choose a file" />
+
+                <!-- Input type radio button for gender -->
+                <label for="male">Gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" checked/>Male
+                    <input type="radio" id="female" name="gender" />Female
+                    <input type="radio" id="other" name="gender" />Other
+                </div>
+
+                <!-- Input type text for username -->
+                <label for="city">City:</label>
+                <select name="city">
+                    <option>Milwaukee</option>
+                    <option>Madison</option>
+                    <option>Green Bay</option>
+                    <option>Chicago</option>
+                    <option>Orlando</option>
+                    <option>Houston</option>
+                    <option>Dallas</option>
+                    <option>San Antonio</option>
+                    <option>El Paso</option>
+                </select>
+
+                <!-- Input type checkbox for sports-->
+                <label for="sports">Favorite Sports:</label>
+                <div>
+                <input type="checkbox" id="chk1" name="sports" value="football">Football
+                <input type="checkbox" id="chk1" name="sports" value="baseball">Baseball
+                <input type="checkbox" id="chk1" name="sports" value="basketball">Basketball
+                <input type="checkbox" id="chk1" name="sports" value="hockey">Hockey
+                <input type="checkbox" id="chk1" name="sports" value="lacrosse">Lacrosse
+                <input type="checkbox" id="chk1" name="sports" value="track-and-field">Track &amp; Field
+                </div>
+
+                <input type="submit" value="Login"/>
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+    </footer>
+    </p>
+</body>
+</html>
