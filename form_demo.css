@@ -1,0 +1,14 @@
+body {
+    font-family: Helvetica;
+}
+p {
+    color: #cc00ff;
+    background-color: #ffff00;
+    text-align: right;
+}
+
+#paragraph2 {
+    color: #ff0000;
+    background-color: initial;
+    text-align: justify;
+}

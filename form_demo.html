@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Form! &#129409</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="form_demo.css" />
+    <!-- Embedded CSS -->
     <style>
+    h3 {
+        color: blue;
+    }
+    body {
+        background-color: bisque !important;
+    }
     .container {
         display: grid;
         grid-template-columns: 25% 75%;
     }
     </style>
 </head>
+<!-- Inline CSS example -->
+<body style="background-color: aquamarine;">
 <body>
     <header>
     </header>
     <h3>HTML Form! &#129409</h3>
+    <p>Insert your user information on this form, please.</p>
+    <p id="paragraph2" >All fields below are mandatory.</p>
     <form action="demo.html" method="post">
         <fieldset>
             <div class="container">
@@ -64,9 +77,12 @@
                     <option>Madison</option>
                     <option>Green Bay</option>
                     <option>Chicago</option>
+                    <option>Miami</option>
+                    <option>Tampa</option>
                     <option>Orlando</option>
                     <option>Houston</option>
                     <option>Dallas</option>
+                    <option>Austin</option>
                     <option>San Antonio</option>
                     <option>El Paso</option>
                 </select>
@@ -74,12 +90,12 @@
                 <!-- Input type checkbox for sports-->
                 <label for="sports">Favorite Sports:</label>
                 <div>
-                <input type="checkbox" id="chk1" name="sports" value="football">Football
-                <input type="checkbox" id="chk1" name="sports" value="baseball">Baseball
-                <input type="checkbox" id="chk1" name="sports" value="basketball">Basketball
-                <input type="checkbox" id="chk1" name="sports" value="hockey">Hockey
-                <input type="checkbox" id="chk1" name="sports" value="lacrosse">Lacrosse
-                <input type="checkbox" id="chk1" name="sports" value="track-and-field">Track &amp; Field
+                <input type="checkbox" id="chk1" name="football" value="football">Football
+                <input type="checkbox" id="chk2" name="baseball" value="baseball">Baseball
+                <input type="checkbox" id="chk3" name="basketball" value="basketball">Basketball
+                <input type="checkbox" id="chk4" name="hockey" value="hockey">Hockey
+                <input type="checkbox" id="chk5" name="lacrosse" value="lacrosse">Lacrosse
+                <input type="checkbox" id="chk6" name="track-and-field" value="track-and-field">Track &amp; Field
                 </div>
 
                 <input type="submit" value="Login"/>
