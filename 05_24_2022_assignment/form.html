@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>&#x1F4B5 Monthly Expenses Report &#x1F4B5</title>
+</head>
+<body>
+    <header>
+        <h3>&#x1F4B5 Monthly Expenses Report &#x1F4B5</h3>
+        <form action="details.html" method="post">
+            <fieldset>
+                <div class="container">
+
+                    <!-- Input for the date -->
+                    <label for="date">Date</label>
+                    <div>
+                    <input type="date" id="date" name="date" />
+                    </div>
+
+                    <!-- Input for the mortgage -->
+                    <label for="mortgage">Mortgage</label>
+                    <div>
+                    <span>$<span><input type="number" id="mortgage" name="mortgage" min="0" step="0.01" />
+                    </div>
+
+                    <!-- Input for the child care -->
+                    <label for="childcare">Child Care</label>
+                    <div>
+                    <span>$<span><input type="number" id="childcare" name="childcare" min="0" step="0.01" />
+                    </div>
+
+                    <!-- Input for the insurance -->
+                    <label for="insurance">Insurance</label>
+                    <div>
+                    <span>$<span><input type="number" id="insurance" name="insurance" min="0" step="0.01" />
+                    </div>
+
+                    <!-- Input for the misc. stuff -->
+                    <label for="period">Period</label>
+                    <div>
+                        <input type="radio" id="monthly" name="period" checked />Monthly
+                        <input type="radio" id="yearly" name="period" />Yearly
+                    </div>
+
+                    <!-- Input for the misc. stuff -->
+                    <label for="miscellaneous">Misc:</label>
+                    <div>
+                    <span>$<span><input type="number" id="miscellaneous" name="miscellaneous" min="0" step="0.01" />
+                    </div>
+
+                    <!-- Input for the checkboxes -->
+                    <label for="misc-types"></label>
+                    <div>
+                        <input type="checkbox" id="misc-types-1" name="misc-types-1" value="Utilities" />Utilities
+                        <input type="checkbox" id="misc-types-2" name="misc-types-2" value="Internet" />Internet
+                        <input type="checkbox" id="misc-types-3" name="misc-types-3" value="Mobile" />Mobile
+                    </div>
+
+                    <!-- Input for the notes-->
+                    <label for="miscellaneous">Notes:</label>
+                    <div>
+                    <textarea></textarea>
+                    </div>
+
+                    <input class="button" type="submit" value="Save" />
+                    <div><br></div>
+                    <div><br></div>
+                </div>
+            </fieldset>
+        </form>
+        <a class="button" href="details.html">See the budget details</a>
+        <p> List of names of people who used this page: </p>
+        <ul>
+            <li>Joe</li>
+            <li>Bob</li>
+            <li>Jim</li>
+            <li>Dave</li>
+            <li>Harry</li>
+            <li>Johnny</li>
+        </ul>
+    </header>
+</body>
+</html>

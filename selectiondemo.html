@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Document</title>
+    <style>
+        * {
+            background-color:blanchedalmond;
+        }
+        #uname {
+            color: blue;
+            font-style: oblique;
+            font-variant: small-caps;
+        }
+        .textbold {
+            font-weight: bold;
+            font-family: 'Sofia', Helvetica, Arial, sans-serif;
+        }
+        p.intro {
+            color: red;
+        }
+        div p {
+            color: purple;
+        }
+        nav>p {
+            color: green;
+        }
+        div+p {
+            color: brown;
+        }
+        nav~ul {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h4 id="uname">This is a header with the uname ID. It should be blue.</h4>
+    <p>This is a standalone paragraph</p>
+    <p class="intro">This is a paragraph with the class "intro". It should be red.</p>
+    <div>
+        <p class="textbold">This paragraph is in a div tag. It has the "textbold" class, so it should be bold.</p>
+        <p>This paragraph is also in a div tag. Both of them should be purple</p>
+    </div>
+    <ul>
+        <li>
+            This unordered list is before a nav element. It is black.
+        </li>
+        <li>
+            First item
+        </li>
+        <li>
+            Second item
+        </li>
+        <li>
+            Third item
+        </li>
+        <li>
+            Fourth item
+        </li>
+    </ul>
+    <nav>            
+        <p>This paragraph is inside of a nav tag. It should be green.</p>
+        <div>
+            <p>This paragraph is inside of a div tag, which is inside of a nav tag. The nav isn't the direct parent of this paragraph, so it should be purple.</p>
+        </div>
+    </nav>
+    <ul>
+        <li>
+            This unordered list is after a nav element. It is teal.
+        </li>
+        <li>
+            First item
+        </li>
+        <li>
+            Second item
+        </li>
+        <li>
+            Third item
+        </li>
+        <li>
+            Fourth item
+        </li>
+    </ul>
+    <div>
+    </div>
+    <p>This is the first paragraph after a div element. It should be brown.</p>
+    
+    <ol>
+        <li>
+            First item
+        </li>
+        <li>
+            Second item
+        </li>
+        <li>
+            Third item
+        </li>
+        <li>
+            Fourth item
+        </li>
+    </ol>
+</body>
+</html>
