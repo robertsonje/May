@@ -9,6 +9,8 @@ h3 {
 }
 
 table {
+    border-collapse: separate;
+    border-radius: 25px;
     margin: auto;
 }
 
@@ -19,7 +21,7 @@ table>caption {
 a {
     text-decoration: none;
     text-align: center;
-    margin: 47.5vw;
+    margin: 46vw;
 }
 
 a:visited {
@@ -37,12 +39,33 @@ th {
 tr:nth-child(odd){
     background-color: #CFD5EA;
     color: black;
+    border: 4px solid #CFD5EA;
 }
 
 tr:nth-child(even){
     background-color: #E9EBF5;
     color: black;
+    border: 4px solid #E9EBF5;
 }
+
+/*
+.top-right-corner{
+    border-radius: 0 25px 0 0 !important;
+}
+
+.top-left-corner{
+    border-radius: 25px 0 0 0 !important;
+}
+
+.bottom-right-corner{
+    border-radius: 0 0 25px 0 !important;
+}
+
+.bottom-left-corner{
+    border-radius: 0 0 0 25px; !important;
+}
+*/
+
 td {
     text-align: center;
 }

@@ -1,0 +1,61 @@
+* {
+    font-family: Times;
+    font-size: small;
+}
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.green {
+    padding: 1rem;
+    background-color: #BBFFCC;
+    grid-column: span 3;
+}
+
+.yellow {
+    padding: 1rem;
+    background-color: #FFFFBB;
+    grid-column: span 1;
+}
+
+.yellow > div {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.yellow > div > div {
+    background-color: white;
+    padding: 1rem;
+}
+
+.red {
+    background-color: #FFBBBB;
+    padding: 1rem;
+}
+
+.red > div {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.red > div > div {
+    padding: 1rem;
+    background-color: white;
+}
+
+.blue {
+    background-color: #BBEEFF;
+    grid-row: span 2;
+}
+
+.orange {
+    background-color: #FFDDBB;
+    grid-column: span 2;
+    padding: 2rem;
+}
