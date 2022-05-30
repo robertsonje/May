@@ -1,0 +1,27 @@
+* {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: little;
+}
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    grid-template-columns: auto auto auto auto;
+    height: 50rem;
+}
+
+.grid-container > div {
+    text-align: center;
+    background-color: black;
+    padding: 1rem;
+}
+
+.large-one {
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+.large-two {
+    grid-area: 3 / 1 / 5 / 3;
+}

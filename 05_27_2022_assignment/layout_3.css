@@ -1,0 +1,62 @@
+* {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: large;
+}
+
+.grid-container {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1rem;
+    grid-template-areas:    "first second third"
+                            "first fourth fourth"
+                            "fifth sixth seventh"
+                            "eighth eighth seventh";
+    height: 30rem;
+}
+
+.grid-container > div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.first {
+    grid-area: first;
+    background-color: #FEB4FF;
+}
+
+.second {
+    grid-area: second;
+    background-color: #C9F3FF;
+}
+
+.third {
+    grid-area: third;
+    background-color: #C9F3FF;
+}
+
+.fourth {
+    grid-area: fourth;
+    background-color: #BAEDA8;
+}
+
+.fifth {
+    grid-area: fifth;
+    background-color: #C9F3FF;
+}
+
+.sixth {
+    grid-area: sixth;
+    background-color: #C9F3FF;
+}
+
+.seventh {
+    grid-area: seventh;
+    background-color: #FEB4FF;
+}
+
+.eighth {
+    grid-area: eighth;
+    background-color: #BAEDA8;
+}

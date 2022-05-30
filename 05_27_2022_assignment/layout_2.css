@@ -1,0 +1,43 @@
+* {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: large;
+}
+
+.grid-container {
+    border: 5px solid black;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-areas:    "first second third"
+                            "fourth second third"
+                            "fourth second fifth";
+}
+
+.grid-container > div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #66D8A4;
+    padding: 1rem;
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+    height: 24rem;
+}
+
+.third {
+    grid-area: third;
+}
+
+.fourth {
+    grid-area: fourth;
+}
+
+.fifth {
+    grid-area: fifth;
+}

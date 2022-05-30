@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            background-color: indigo;
+            display: grid;
+            grid-template-columns: 5rem 30rem auto;
+            grid-template-areas: 'header header header'
+                                 'menu main sidebar'
+                                 'menu footer footer'; 
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .item1 { 
+            padding: 1rem;
+            background-color: green;
+            grid-area: header; 
+        }
+        .item2 { 
+            padding: 1rem;
+            background-color: red;
+            grid-area: menu; 
+        }
+        .item3 { 
+            padding: 1rem;
+            background-color: blue;
+            grid-area: main; 
+            
+        }
+        .item4 {
+            padding: 1rem;
+            background-color: yellow;
+            grid-area: sidebar; 
+        }
+        .item5 { 
+            padding: 1rem;
+            background-color: orange;
+            grid-area: footer; 
+        }
+
+        .container {
+            background-color: blueviolet;
+            display: grid;
+            grid-template-rows: 10rem auto;
+            grid-template-columns: 5rem 12.5rem auto auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .container > div {
+            background-color: aquamarine;
+            text-align: center;
+            padding: 1.5rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Grid Demo:</h2>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Sidebar</div>
+        <div class="item5">Footer</div>
+    </div>
+    <hr/>
+    <div class="container">
+        <div>ONE</div>
+        <div>TWO</div>
+        <div>THREE</div>
+        <div>FOUR</div>
+        <div>FIVE</div>
+        <div>SIX</div>
+    </div>
+</body>
+</html>

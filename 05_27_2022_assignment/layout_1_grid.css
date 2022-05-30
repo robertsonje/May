@@ -1,0 +1,52 @@
+* {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: small;
+}
+
+.grid-container {
+    border: 2px solid #8BB9A2;  /* green */
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-areas:    "header header"
+                            "article text1"
+                            "article text2"
+                            "main main"
+                            "footer footer";
+}
+
+.grid-container > div {
+    text-align: center;
+    border: 2px solid #4A4D65;  /* purple */
+    padding: 1rem;
+}
+
+.header {
+    grid-area: header;
+    height: 2rem;
+}
+
+.main {
+    grid-area: main;
+    height: 15rem;
+}
+
+.article {
+    grid-area: article;
+}
+
+.text1 {
+    grid-area: text1;
+    height: 5rem;
+}
+
+.text2 {
+    grid-area: text2;
+    height: 5rem;
+}
+
+.footer {
+    grid-area: footer;
+    height: 1rem;
+}
+
