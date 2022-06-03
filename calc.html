@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator:</h1>
+    <form>
+        <label for="firstNumber">Enter First Number:</label><br />
+        <input type="number" id="firstNumber" name="num1" /><br/><br />
+        <label for="secondNumber">Enter Second Number:</label><br />
+        <input type="number" id="secondNumber" name="num2" /><br/><br />
+        <input type="radio" name="operation" value="add" id="add">
+        <label for="add">Add</label>
+        <input type="radio" name="operation" value="subtract" id="subtract">
+        <label for="subtract">Subtract</label>
+        <input type="radio" name="operation" value="multiply" id="multiply">
+        <label for="multiply">Multiply</label>
+        <input type="radio" name="operation" value="divide" id="divide">
+        <label for="divide">Divide</label><br /><br />
+        <button id="operationButton">Calculate</button>
+    </form>
+    <p>Result:</p>
+    <div id="result">
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
