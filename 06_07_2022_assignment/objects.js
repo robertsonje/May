@@ -5,6 +5,7 @@ function displaySales(sales) {
         } else {
             sales[Item].Sale = sales[Item].Original;
         }
+        sales[Item].Total = Math.floor((sales[Item].Sale * sales[Item].Stock) * 100) / 100;
     }
     result = JSON.stringify(sales, null, 2)
     result = result.replace(/\"/g, ''); // Remove the quotations

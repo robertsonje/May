@@ -26,3 +26,20 @@ console.log(name + 12);
 console.log(name + 12 + 3);
 console.log(name + (12+3));
 console.log(12+2 + name);
+
+console.log(this);
+function f() {
+    return this;
+}
+console.log(f());
+
+const obj1 = {
+    foo: function() {
+        const baz = () => this;
+            return baz;
+    },
+    bar: () => this
+}
+
+console.log(obj1.foo);
+console.log(obj1.bar);
