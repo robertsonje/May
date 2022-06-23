@@ -64,13 +64,16 @@ let employee = {
     role: {
         team: 'Tools Team',
         organization: 'Drive Division'
-    }
+    },
+    //introduction: function() { console.log(`Hello, my name is ${this.eName}`) }// Illegal, throws an error
 }
+
+employee.introduction = () => console.log(`Hello, my name is ${this.eName}`) // Illegal, throws an error
 
 // Resulting code for destructuring this object
 let {eName, address, eid, company, role: {team, organization}} = employee;
 console.log(`${eName} from ${address}, with an employee id of ${eid}, works in the ${organization} of ${company} as a member of the ${team}.`);
-
+employee.introduction();
 console.log(`${turnOn} ${typeof turnOn} ${turnOn.prototype}`);
 
 const person2 = {
